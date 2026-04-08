@@ -1,0 +1,23 @@
+// Keyed by "MM-DD" for fixed holidays
+export const SPECIAL_DAYS = {
+    "01-01": { emoji: "🎆", name: "New Year's Day" },
+    "01-14": { emoji: "🪁", name: "Makar Sankranti" },
+    "01-26": { emoji: "🇮🇳", name: "Republic Day" },
+    "02-14": { emoji: "💝", name: "Valentine's Day" },
+    "03-25": { emoji: "🎨", name: "Holi" },
+    "04-14": { emoji: "🙏", name: "Dr. Ambedkar Jayanti" },
+    "04-18": { emoji: "✝️", name: "Good Friday" },
+    "05-01": { emoji: "✊", name: "Labour Day" },
+    "06-21": { emoji: "🧘", name: "International Yoga Day" },
+    "08-15": { emoji: "🇮🇳", name: "Independence Day" },
+    "08-16": { emoji: "🪔", name: "Janmashtami" },
+    "09-07": { emoji: "🐘", name: "Ganesh Chaturthi" },
+    "10-02": { emoji: "🕊️", name: "Gandhi Jayanti" },
+    "10-20": { emoji: "🪔", name: "Dussehra" },
+    "10-31": { emoji: "🎃", name: "Halloween" },
+    "11-01": { emoji: "🌸", name: "Kannada Rajyotsava" },
+    "11-05": { emoji: "🪔", name: "Diwali" },
+    "11-15": { emoji: "🌾", name: "Guru Nanak Jayanti" },
+    "12-25": { emoji: "🎄", name: "Christmas" },
+    "12-31": { emoji: "🎉", name: "New Year's Eve" },
+};

@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+  }
+}
+
+@keyframes rain {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+
+  15% {
+    opacity: 1;
+  }
+
+  85% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(600px);
+    opacity: 0;
+  }
+}
+
+.animate-rain {
+  animation: rain linear infinite;
+}
+
+@keyframes snow {
+  0% {
+    transform: translateY(-20px) translateX(0px);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translateY(500px) translateX(40px);
+    opacity: 0;
+  }
+}
+
+.animate-snow {
+  animation: snow linear infinite;
+}
+
+@keyframes leaf-fall {
+  0% {
+    transform: translateY(-20px) rotateZ(0deg) rotateY(0deg) translateX(0px);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  100% {
+    transform: translateY(500px) rotateZ(360deg) rotateY(360deg) translateX(-80px);
+    opacity: 0;
+  }
+}
+
+.animate-leaf {
+  animation: leaf-fall linear infinite;
+}
+
+@keyframes petal-float {
+  0% {
+    transform: translateY(-20px) rotateZ(0deg) translateX(0px);
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0.9;
+  }
+
+  100% {
+    transform: translateY(500px) rotateZ(270deg) translateX(80px);
+    opacity: 0;
+  }
+}
+
+.animate-petal {
+  animation: petal-float linear infinite;
+}
+
+@keyframes summer-glow {
+
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-summer-glow {
+  animation: summer-glow 4s ease-in-out infinite;
+}
+
+@keyframes heatwave {
+  0% {
+    transform: translateY(100%) scaleX(1);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-100%) scaleX(1.05);
+    opacity: 0;
+  }
+}
+
+.animate-heatwave {
+  animation: heatwave ease-in-out infinite;
+  filter: blur(8px);
+}
